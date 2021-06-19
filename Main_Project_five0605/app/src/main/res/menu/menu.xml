@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+            <item android:id="@+id/logout"
+                android:title="로그인"
+                android:icon="@drawable/login"
+                app:showAsAction="always"
+
+
+                />
+
+            <item android:id="@+id/qr_scan"
+                android:title="로그아웃"
+                android:icon="@drawable/qr_scan_white"
+                app:showAsAction="always"
+
+
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Settings, should always be in the overflow -->
+    <!--    <item android:id="@+id/menu2"-->
+    <!--        android:title="setting"-->
+    <!--        android:icon="@drawable/menu_white"-->
+
+    <!--        app:showAsAction="always"/>-->
+
+
+</menu>

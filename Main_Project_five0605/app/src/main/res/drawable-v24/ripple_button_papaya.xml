@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:color="#ffffff"
+    >
+
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/main"/>
+            <stroke android:width="3dp" android:color="#757575"/>
+            <corners android:radius="10dp"/>
+            <padding android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp"/>
+
+        </shape>
+
+    </item>
+    <item> <shape> <padding android:top="1dp" android:right="1dp" android:bottom="2dp" android:left="1dp" /> <corners android:radius="5dp" /> <solid android:color="#00CCCCCC" /> </shape> </item>
+    <item> <shape> <padding android:top="1dp" android:right="1dp" android:bottom="2dp" android:left="1dp" /> <corners android:radius="5dp" /> <solid android:color="#10CCCCCC" /> </shape> </item>
+    <item> <shape> <padding android:top="1dp" android:right="1dp" android:bottom="2dp" android:left="1dp" /> <corners android:radius="5dp" /> <solid android:color="#20CCCCCC" /> </shape> </item>
+    <item> <shape> <padding android:top="1dp" android:right="1dp" android:bottom="2dp" android:left="1dp" /> <corners android:radius="5dp" /> <solid android:color="#30CCCCCC" /> </shape> </item>
+    <item> <shape> <padding android:top="1dp" android:right="1dp" android:bottom="2dp" android:left="1dp" /> <corners android:radius="5dp" /> <solid android:color="#50CCCCCC" /> </shape> </item>
+    <!-- Background -->
+    <item> <shape> <solid android:color="#ffffff" /> <corners android:radius="10dp" /> </shape> </item>
+
+    <item android:id="@android:id/background">
+
+        <shape android:shape="rectangle">
+            <solid android:color="@color/papaya_punch"/>
+            <stroke android:width="3dp" android:color="@color/papaya_punch"/>
+            <corners android:radius="5dp"/>
+            <padding android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp"/>
+        </shape>
+    </item>
+
+</ripple>

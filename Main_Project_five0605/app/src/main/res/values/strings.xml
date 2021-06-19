@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">여기요(STAFF)</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#c4c4c4</item>
+        <item name="colorAccent">#ff0000</item>
+
+    </style>
+    <string name="contents">%s</string>
+</resources>

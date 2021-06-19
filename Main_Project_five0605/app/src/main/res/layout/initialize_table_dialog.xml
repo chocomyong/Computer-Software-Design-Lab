@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_dialog"
+    android:orientation="vertical"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_gravity="top|center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shadow"
+            android:fontFamily="@font/jua"
+            android:gravity="center"
+            android:text="테이블 초기설정"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+
+            >
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/settable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:ems="12"
+                android:hint="여기클릭! 테이블 설정"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dialog_numbers_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+
+        android:layout_below="@+id/fl"
+        android:minHeight="56dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/option_negative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/ripple_button_rec_black"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="@color/color"
+
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/option_positive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button_rec"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:gravity="center"
+            android:text="확인"
+            android:textColor="@color/color"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
