@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.main_project_two0523">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name = "android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|screenSize"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true"
+
+        android:icon="@drawable/logo_c"
+        android:label="여기요(CLIENT)"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        >
+        <activity android:name=".CreateQR"/>
+
+
+        <activity android:name=".Activity_Restaurant_Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth" -->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao3ccc7aba0007a5cfde72bd6d3bb66e7d" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_SignUp_Main" />
+        <activity android:name=".Activity_Login_Main" />
+        <activity android:name=".Activity_Menu_Main" />
+        <activity android:name=".Activity_Order_Main" />
+        <activity android:name=".Activity_Bill_Main" />
+    </application>
+
+</manifest>
