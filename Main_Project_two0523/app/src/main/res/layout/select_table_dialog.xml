@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_dialog"
+    android:orientation="vertical"
+    android:id="@+id/li1"
+
+
+
+    >
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ripple_button"
+        android:gravity="center"
+        android:text="계산서"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/option_title"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shadow"
+        android:gravity="center"
+        android:layout_below="@+id/dialog_title"
+        android:text="테이블 설정"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/listView"
+            android:layout_below="@+id/option_title"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="?attr/selectableItemBackground"
+            android:scrollbarFadeDuration="0"
+
+            />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/dialog_numbers_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/blue_dark"
+
+        android:minHeight="56dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/listView"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/option_negative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/ripple_button_black"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="@color/color"
+
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/option_positive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button"
+            android:gravity="center"
+            android:text="담기"
+            android:textColor="@color/color"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    tools:context="com.example.main_project_two0523.dialog.Menu_Dialog">
+
+    <TextView
+        android:id="@+id/dialog_QR"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shadow_blue"
+
+        android:fontFamily="@font/nanumbarunpenb"
+
+        android:gravity="center"
+        android:text="계 산"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/Lprice"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/dialog_QR"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:gravity="center"
+            android:text="결제금액"
+
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/shadow"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:gravity="center"
+
+            android:text="0 원 "
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Lprice"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical"
+
+
+            >
+
+
+
+
+                <ImageView
+                    android:id="@+id/qrcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/img_x"
+                    android:background="#ffffff"  />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/L3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_weight="1"
+
+            android:background="@color/main"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_alignBottom="@+id/listView"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_button"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:text="뒤로가기"
+                android:textColor="@color/color"
+                android:textSize="30dp"
+
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+
+    android:background="@drawable/shadow"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="10dp"
+
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/order_menu_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/order_img_menu_ID"
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/round_list"
+                android:paddingLeft="3dp"
+                android:scaleType="fitStart" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/linear4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/order_menu_name"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/nanumbarunpenb"
+                    android:gravity="left"
+                    android:text="menu_name"
+
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/order_menu_price"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_menu_name"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/nanumbarunpenb"
+                    android:text="menu_price"
+                    android:textColor="#000000"
+
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/linear4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ripple_button"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+
+                >
+
+
+                <Button
+                    android:id="@+id/order_numdown"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/jua"
+                    android:text="&lt;"
+                    android:textColor="@color/color"
+                    android:background="@drawable/ripple_button"
+
+                    android:textSize="20sp"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/order_num"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ripple_button"
+
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/jua"
+                    android:gravity="center"
+                    android:text="1"
+
+                    android:textColor="@color/color"
+                    android:textSize="20sp"
+
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/order_numup"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ripple_button"
+
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/jua"
+                    android:text="&gt;"
+                    android:textColor="@color/color"
+                    android:textSize="20sp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            >
+            <Button
+                android:id="@+id/xbtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/img_x"
+                android:layout_alignParentRight="true" />
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

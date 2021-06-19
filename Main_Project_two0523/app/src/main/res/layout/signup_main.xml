@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activity_SignUp_Main">
+
+    <include
+        android:id="@+id/toolbar"
+
+        layout="@layout/main_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/l2"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="ID"
+            android:textSize="25dp"
+
+            />
+
+        <EditText
+            android:id="@+id/eID"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:inputType="text"
+
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="PW" />
+
+        <EditText
+            android:id="@+id/ePW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l2"
+        android:layout_marginLeft="30dp"
+
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+
+            android:text="Email"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:inputType="text"
+
+            android:gravity="center"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/la3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l3"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:text=" S i n u p"
+            android:textColor="@color/color"
+
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="State"
+        android:textSize="30dp"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

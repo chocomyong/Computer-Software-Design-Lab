@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">여기요</string>
+    <string name="kakao_app_key">앱 키 </string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#c4c4c4</item>
+        <item name="colorAccent">#FEA088</item>
+
+
+    </style>
+</resources>

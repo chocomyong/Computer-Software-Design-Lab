@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/li"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:background="@color/background"
+
+
+    tools:context=".Activity_Bill_Main">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/main_toolbar" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/background"
+
+        android:id="@+id/l2"
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="가격"
+            android:background="@drawable/shadow"
+            android:textColor="@color/main"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/shadow"
+            android:textColor="@color/main"
+            android:text="0원"
+
+            android:textSize="30sp"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_below="@id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+
+        android:id="@+id/RA"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="주문 내용이 없어요!!"
+            android:id="@+id/isEmpty"
+            android:layout_marginTop="500dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#c7c7c7"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:visibility="gone" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@color/main"
+                    android:scrollbarFadeDuration="0"
+                    />
+            </ScrollView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/L3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+
+            android:layout_weight="1"
+
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/calling"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_alignBottom="@+id/listView"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_button"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:text="호출하기"
+
+                android:textColor="@color/color"
+                android:textSize="30dp"
+
+                />
+            <Button
+                android:id="@+id/pay"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_alignBottom="@+id/listView"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_button"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:text="계산하기"
+
+                android:textColor="@color/color"
+                android:textSize="30dp"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
